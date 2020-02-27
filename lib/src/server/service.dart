@@ -94,7 +94,7 @@ abstract class Service {
 
   String get $name;
 
-  void $addMethod(ServiceMethod method) {
+  void $addMethod<Q, R>(ServiceMethod<Q, R> method) {
     _$methods[method.name] = method;
   }
 
